@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 import RightArrow from "../../assets/right-arrow.svg?react"
 import GitHubIcon from "../../assets/github-icon.svg?react"
-import EmailIcon from "../../assets/email-icon.svg?react"
+import ThreadsIcon from "../../assets/threads-icon.svg?react"
 import LinkedinIcon from "../../assets/linkedin-icon.svg?react"
 
 import userProfile from "../../assets/user-profile.jpg"
@@ -28,20 +28,51 @@ function Hero() {
                 </p>
 
                 <div className="btn-actions-container">
-                    <button className="btn-view-projects">View Projects <RightArrow className="right-arrow-svg" /></button>
-                    <button className="get-in-touch">Get in Touch</button>
+
+                    <a href="#projects">
+                        <button className="btn-view-projects">View Projects <RightArrow className="right-arrow-svg" /></button>
+
+                    </a>
+
+                    <a href="#contact" className="a-get-in-touch">
+                        <button className="get-in-touch">Get in Touch</button>
+
+                    </a>
+
                 </div>
 
-                <div className="contact-buttons-container">
-                    <button className="btn-github">
-                        <GitHubIcon className="github-icon" />
-                    </button>
-                    <button className="btn-linkedin">
-                        <LinkedinIcon className="linkedin-icon" />
-                    </button>
-                    <button className="btn-email">
-                        <EmailIcon className="email-icon" />
-                    </button>
+                <div className="follow-me-buttons-container">
+
+                    <a href="https://github.com/geraldmrls" target="_blank">
+                        <motion.button className="btn-github-contact"
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.3 }}
+                            viewport={{ once: true }}>
+                            <GitHubIcon className="github-icon github-icon-contact" />
+                        </motion.button>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/gerald-morales-807283218/" target="_blank">
+                        <motion.button className="btn-linkedin-contact"
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.3 }}
+                            viewport={{ once: true }}>
+                            <LinkedinIcon className="linkedin-icon linkedin-icon-contact" />
+                        </motion.button>
+                    </a>
+
+                    <a href="https://www.threads.com/@geraldmrls" target="_blank">
+                        <motion.button className="btn-threads-contact"
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.3 }}
+                            viewport={{ once: true }}>
+                            <ThreadsIcon className="threads-icon-contact" />
+                        </motion.button>
+                    </a>
+
                 </div>
             </div>
 

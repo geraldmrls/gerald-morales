@@ -99,14 +99,16 @@
   border: 1px solid gray;
   border-radius: 10px;
   padding: 0px 20px;
-  margin-left: 5px;
+  align-self: center;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  height: 100%;
   transition:
     border-color 0.5s ease,
     background 0.5s ease;
 }
+
 
 .get-in-touch:hover {
   border-color: var(--tertiary-color);
@@ -179,6 +181,8 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+  
+
   .hero {
     flex-direction: column-reverse;
     align-items: center;
@@ -222,6 +226,7 @@
 }
 
 @media (width<= 768px) {
+  
   .hero{
     padding-top: 30%;
   }

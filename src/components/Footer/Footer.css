@@ -15,7 +15,7 @@ hr{
 
 @media (width<=768px){
     hr{
-        margin-top: 60px;
+        margin-top: 50px;
     }
 
     .footer-description{

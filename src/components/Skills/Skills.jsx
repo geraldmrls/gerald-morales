@@ -87,7 +87,6 @@ function Skills() {
                     <div className="skill-tags-container">
                         <span className="skill-tag">REST APIs</span>
                         <span className="skill-tag">Responsive Desing</span>
-                        <span className="skill-tag">Component Architecture</span>
                         <span className="skill-tag">State Management</span>
                         <span className="skill-tag">Debouncing</span>
                     </div>

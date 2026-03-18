@@ -35,19 +35,19 @@ const Header = () => {
                 <div className="header-right-side">
 
                     <a href="#home">
-                        <span>Home</span>
+                        <p>Home</p>
                     </a>
 
                     <a href="#projects">
-                        <span>Projects</span>
+                        <p>Projects</p>
                     </a>
 
                     <a href="#skills">
-                        <span>Skills</span>
+                        <p>Skills</p>
                     </a>
 
                     <a href="#contact">
-                        <span>Contact</span>
+                        <p>Contact</p>
                     </a>
                 </div>
             </div>

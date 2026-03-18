@@ -328,6 +328,10 @@
   .btn-threads-contact {
     margin: 0 10px;
   }
+
+  .section-label-contact {
+    margin-top: 70px
+  }
 }
 
 @media (width<=370px) {

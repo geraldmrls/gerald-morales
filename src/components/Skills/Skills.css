@@ -98,16 +98,33 @@
 }
 
 /* --- Tech/Tool Icons --- */
-.react-icon, .js-icon, .html-icon, .css-icon, .vite-icon, .axios-icon,
-.git-icon, .github-icon-skill, .vercel-icon, .vscode-icon, .npm-icon {
+.react-icon,
+.js-icon,
+.html-icon,
+.css-icon,
+.vite-icon,
+.axios-icon,
+.git-icon,
+.github-icon-skill,
+.vercel-icon,
+.vscode-icon,
+.npm-icon {
   width: 40px;
   height: 40px;
   margin-right: 30px;
 }
 
-.axios-icon { width: 70px; }
-.npm-icon { width: 50px; height: 50px; }
-.vercel-icon, .github-icon-skill { stroke: white; }
+.axios-icon {
+  width: 70px;
+}
+.npm-icon {
+  width: 50px;
+  height: 50px;
+}
+.vercel-icon,
+.github-icon-skill {
+  stroke: white;
+}
 
 /* --- Skill Tags (Text) --- */
 .skill-tag {
@@ -128,6 +145,11 @@
 }
 
 @media (max-width: 768px) {
+  .skills-expertise-title {
+    margin-top: 70px;
+    text-align: center;
+  }
+
   .skills-grid {
     display: flex;
     overflow-x: auto;
@@ -165,16 +187,19 @@
     margin-bottom: 15px;
   }
 
-  .code-icon, .tools-icon, .method-icon {
+  .code-icon,
+  .tools-icon,
+  .method-icon {
     margin-right: 0;
     margin-bottom: 10px;
   }
 
   .skill-tags-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 10px;
+    row-gap: 15px;
+    width: 100%;
   }
 
   .skill-tag {
@@ -182,12 +207,36 @@
     text-align: center;
     display: flex;
     align-items: center;
+    padding: 5px 5px;
   }
 
-  .react-icon, .js-icon, .html-icon, .css-icon, .vite-icon, .axios-icon,
-  .git-icon, .github-icon-skill, .vercel-icon, .vscode-icon, .npm-icon {
+  .react-icon,
+  .js-icon,
+  .html-icon,
+  .css-icon,
+  .vite-icon,
+  .axios-icon,
+  .git-icon,
+  .github-icon-skill,
+  .vercel-icon,
+  .vscode-icon,
+  .npm-icon {
     width: 30px;
     height: 30px;
     margin-right: 0;
+  }
+
+  /* .git-icon,
+  .github-icon-skill,
+  .vercel-icon,
+  .vscode-icon,
+  .npm-icon{
+    width: 35px;
+    height: 35px;
+  } */
+
+  .axios-icon {
+    width: 50px;
+    height: 50px;
   }
 }
