@@ -24,13 +24,17 @@ const Header = () => {
     }, []);
 
     return (
-        // If isScrolled is true, it adds the 'scrolled' class
-        <motion.header className={isScrolled ? 'scrolled' : ''}
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.3 }}
-            viewport={{ once: true }}>
-            <div className="header-container">
+        // Motion removed from header — framer-motion transforms on the header element
+        // itself break backdrop-filter in production builds (Chromium stacking context issue).
+        // Animation is now on the inner container instead.
+        <header className={isScrolled ? 'scrolled' : ''}>
+            <motion.div
+                className="header-container"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3 }}
+                viewport={{ once: true }}
+            >
                 <div className="gm">GM</div>
                 <div className="header-right-side">
 
@@ -50,8 +54,8 @@ const Header = () => {
                         <p>Contact</p>
                     </a>
                 </div>
-            </div>
-        </motion.header>
+            </motion.div>
+        </header>
     );
 };
 
