@@ -6,7 +6,8 @@ import GitHubIcon from "../../assets/github-icon.svg?react"
 import ThreadsIcon from "../../assets/threads-icon.svg?react"
 import LinkedinIcon from "../../assets/linkedin-icon.svg?react"
 
-import userProfile from "../../assets/user-profile.jpg"
+// import userProfile from "../../assets/user-profile.jpg"
+import geraldPicture from "../../assets/gerald-picture.jpg"
 import "./Hero.css"
 
 function Hero() {
@@ -82,7 +83,7 @@ function Hero() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}>
 
-                <img className="user-profile" src={userProfile} />
+                <img className="user-profile" src={geraldPicture} />
                 <span className="years-experience">
 
                 </span>

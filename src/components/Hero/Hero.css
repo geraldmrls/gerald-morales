@@ -177,6 +177,7 @@
   width: 350px;
   box-shadow: 0 0 70px 10px rgba(0, 191, 255, 0.3);
   border-radius: 20px;
+  object-fit: cover;
 }
 
 /* Responsive Styles */
