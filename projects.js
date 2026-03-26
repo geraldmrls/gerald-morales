@@ -29,7 +29,7 @@ export const projects = [
         description: "A task management app with weekly progress tracking, task filtering, and real time completion stats to keep you productive.",
         technologies: ["React", "JavaScript", "HTML", "CSS", "LocalStorage"],
         github_url: "https://github.com/geraldmrls/todo-app-with-react-js",
-        vercel: "https://todo-app-with-react-gdlyyix5c-geralds-projects-f746d5c5.vercel.app/",
+        vercel: "https://todo-app-with-react-js-ten.vercel.app/",
         id: 3
     },
     {
